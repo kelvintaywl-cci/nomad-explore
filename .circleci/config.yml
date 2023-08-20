@@ -2,10 +2,10 @@ version: 2.1
 
 jobs:
   build:
-    parallelism: 10
+    parallelism: 20
     docker:
       - image: cimg/base:current
-    resource_class: xlarge
+    resource_class: large
     steps:
       - run: |
           sleep 120
